@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/flappy_bird_background"
+    tools:context=".FinishActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/congratulation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="70dp"
+                android:fontFamily="@font/baloo"
+                android:text="congratulations"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="35sp" />
+
+            <ImageView
+                android:id="@+id/bird"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/congratulation"
+                android:src="@drawable/bird_frame1"
+                android:layout_marginTop="40dp" />
+
+            <TextView
+                android:id="@+id/gameFinish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bird"
+                android:layout_marginTop="70dp"
+                android:fontFamily="@font/baloo"
+                android:text="Game Finished"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/play_button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/play_button"
+                android:layout_below="@id/gameFinish"
+                android:layout_marginTop="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"  />
+
+            <TextView
+                android:id="@+id/play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/play_button"
+                android:text="Play Again"
+                android:textColor="@android:color/white"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exit"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/play"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
