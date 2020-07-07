@@ -5,6 +5,7 @@ The more pipes you fly through, the higher is your score.
 Try to pass all the levels and bit your best score.
 
 The Game:
+---
 
 • Tap your screen to keep the bird fly.
 
